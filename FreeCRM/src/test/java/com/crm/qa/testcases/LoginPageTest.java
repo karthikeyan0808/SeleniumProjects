@@ -24,14 +24,15 @@ public class LoginPageTest extends TestBase {
 		// We need to declare super keyword
 
 		// Super keywords work is to goto the parent class and call the super class
-		// constructor because here we need to initialise the properties also
-		// It is compulspry to call the base class constructor before any test or to be
+		// constructor(main base class) because here we need to initialise the
+		// properties also
+		// It is compulsory to call the base class constructor before any test or to be
 		// called
 
 		super();
 	}
 
-	// In this class body we will define all the reqired annotations for the test
+	// In this class body we will define all the required annotations for the test
 
 	@BeforeMethod
 
@@ -50,6 +51,14 @@ public class LoginPageTest extends TestBase {
 		loginPage = new LoginPage();
 
 	}
+
+	// IMP : Always when writing the test method the method name should end with
+	// Test , So anyone whos is
+	// Viewing the code can differentiate between the methods
+	// Also we need to make sure the tests are independent there should be no link
+	// between the tests
+	// IMP ***** Before each test case launch the browser and login
+	// After the test case make sure you quit the browser
 
 	@Test(priority = 1)
 
